@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+  <!-- font-family: 'Roboto Condensed', sans-serif; -->
+  <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;700&display=swap" rel="stylesheet">
+  <!-- font-family: 'Oxygen', sans-serif; -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Ubuntu:wght@300;700&family=Varela+Round&display=swap"
+    rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: rgb(5, 14, 41);
+      color: white;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      height: 80px;
+      background-color: rgb(12, 12, 74);
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      list-style: none;
+      margin: 0 23px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+    }
+
+    nav ul li a:hover {
+      color: rgb(152, 152, 221);
+      font-size: 1.01rem;
+    }
+
+    .left {
+      font-size: 1.5rem;
+    }
+
+    .firstSection {
+      display: flex;
+      margin: 80px 0;
+      justify-content: space-around;
+    }
+
+    .firstSection>div {
+      width: 30%;
+      margin: 160px 0;
+      align-items: center;
+    }
+
+    .leftSection {
+      font-size: 3rem;
+    }
+
+    .rightSection img {
+
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
+
+    .purple {
+      color: rgb(149, 91, 202);
+    }
+
+    #element {
+      color: rgb(149, 91, 202);
+      ;
+    }
+
+
+
+    #education .content h1 {
+      text-align: center;
+      font-size: 3rem;
+    }
+
+    #education .about-container {
+      #education .content h1 {
+        text-align: center;
+      }
+    }
+
+    h1 {
+      padding-top: 100px;
+    }
+
+    #education .about-container {
+      display: block;
+      margin: 20px 100px;
+      padding: 90px;
+    }
+
+    #education .content h1 {
+      text-align: center;
+    }
+
+    #education .about-container {
+      display: block;
+    }
+
+    #education .about-container h4 {
+      position: relative;
+      padding-top: 30px;
+    }
+
+    #education .about-container img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 30%;
+    }
+    #certifications .about-content img{
+      margin: auto;
+      width: 30%;
+    }
+
+    #li1 {
+      color: rgb(149, 91, 202);
+    }
+    
+    .carousel-item {
+      width: 80%;
+      position: 500px;
+      
+    }
+    .carousel-inner{
+        text-align: center;
+        margin-left: 200px;
+    }
+    .column{
+      width: 600px;
+      
+    }
+    .column h5 {
+      color: rgb(149, 91, 202);
+    }
+
+    #project .proj h1{
+      margin-bottom: 50px;
+      padding-bottom: 43px;
+      font-size: 3rem;
+      text-align: center;
+    }
+
+    #projects .container {
+      margin-top: 50px;
+    }
+
+    #projects .container h1 {
+      margin-bottom: 50px;
+      padding-bottom: 43px;
+      font-size: 3rem;
+    }
+
+    #projects .container h3 {
+      font-size: 3rem;
+    }
+    #projects .col{
+      margin: 25px;
+      border-radius: 10px;
+      padding: 5px;
+    }
+    .col h5 {
+      color: rgb(149, 91, 202);
+    }
+
+    #skills .container {
+      margin-top: 80px;
+      margin-bottom: 80px;
+    }
+
+    #skills .container h1 {
+      padding-bottom: 23px;
+      margin-bottom: 50px;
+      font-size: 3rem;
+    }
+
+    #skills .col {
+      margin-bottom: 20px;
+    }
+
+    .p-3 {
+      color: rgb(28, 5, 20);
+      font-family: 'Roboto' sans-serif;
+      border-radius: 2rem;
+      font-size: 1.2rem;
+    }
+
+    .p-3:hover {
+      color: rgb(63, 32, 92);
+      font-size: 1.4rem;
+    }
+
+    #contacts .contact {
+      margin-bottom: 40px;
+    }
+
+    .contact h1 {
+      text-align: center;
+      padding-bottom: 30px;
+      font-size: 3rem;
+    }
+
+    .contact h6 {
+      text-align: center;
+    }
+
+    #contacts .add {
+      font-size: 1.2rem;
+      
+    }
+    #contacts address{
+      text-decoration: none;
+      color: white;
+    }
+
+    #contacts .add p {
+      font-size: 1.2rem;
+      margin-bottom: 26px;
+      color: rgb(149, 91, 202);
+    }
+    
+
+    .port {
+      background-color: rgb(12, 12, 74);
+      height: 80px;
+      text-align: center;
+      padding-top: 23px;
+    }
+
+    .heading {
+      text-decoration: none;
+      color: white;
+      font-size: 22px;
+    }
+
+    .heading:hover {
+      color: rgb(152, 152, 221);
+      font-size: 24px;
+    }
+
+    #certifications h1 {
+      text-align: center;
+      padding-bottom: 30px;
+      font-size: 3rem;
+    }
+    #certifications .carousel-caption{
+      color: rgb(34, 14, 52);
+      
+
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="left">Vaishnavi's Portfolio </div>
+      <div class="right">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#contacts">Contacts</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="firstSection">
+      <div class="leftSection">
+        Hi, My name is <span class="purple">Vaishnavi</span>
+        <div>and I am a passionate</div>
+        <span id="element"></span>
+      </div>
+      <div class="rightSection">
+        <img src="./images/image.jpg" alt="">
+      </div>
+    </section>
+    <section class="secondSection">
+
+    </section>
+
+  </main>
+  <section id="education">
+    <div class="content">
+      <h1>Education</h1>
+      <div class="about-container">
+        <img src="./images/study.png" class="rounded float-end" alt="...">
+        <h4>Walchand College of Engineering, Sangli</h4>
+        <ul>
+          <li id="li1">BTech in CSE</li>
+          <li>2019-2023</li>
+          <li>Aggregate CGPA: 7.87</li>
+        </ul>
+        <h4>S.B.N.E.School and Junior College Dodi B.K</h4>
+        <ul>
+          <li id="li1">HSC</li>
+          <li>2018-2019</li>
+          <li>percentage: 82.62%</li>
+        </ul>
+        <h4>S.B.N.E.School and Junior College Dodi B.K</h4>
+        <ul>
+          <li id="li1">SSC</li>
+          <li>2016-2017</li>
+          <li>Percentage: 93.40%</li>
+        </ul>
+
+
+      </div>
+    </div>
+  </section>
+
+    
+  
+  <section id="projects">
+    <div class="container text-center">
+      <h1>Projects</h1>
+      <div class="row align-items-start">
+        <div class="col border border-dark">
+          <a class="heading" href="http://github.com/95Vaishnavi/Alumni_Tracking_System">Alumni Tracking System</a>
+          <!--<h4 >Alumni Tracking System</h4>-->
+          <h6>(Web Application)</h6>
+          <h5>Technology Stack Used : MERN</h5>
+          <p>A web application, that allows alumni of WCE to register
+            themselves and create a profile , view the events in the campus
+            and publish job openings.Share thoughts using live chat.</p>
+        </div>
+        <div class="col border border-dark">
+          <a class="heading" href="https://github.com/95Vaishnavi/Gro-Field">Gro-Field</a>
+          <!-- <h4>Gro-Field</h4>-->
+          <h6>(Web Application)</h6>
+          <h5>Technology Stack Used: Python Flask </h5>
+          <p>A web application, that suggest crops, recommend fertilizers
+            and detects leaf disease using machine learning and deep
+            learning techniques and existing approaches to leverage the
+            agriculture capacities.</p>
+        </div>
+        <div class="col border border-dark">
+          <a class="heading" href="https://github.com/95Vaishnavi/See-Me">See Me</a>
+          <!--<h4>See Me</h4>-->
+          <h6>(Image Processing)</h6>
+          <h5>Technology Stack used: OpenCV</h5>
+          <p>A simple color based identification application, that uses
+            functions from OpenCV library to trace the path of object
+            shown in the camera. Can be used as white-board.</p>
+        </div>
+      </div>
+      <div class="container text-center">
+        <div class="row align-items-start">
+          <div class="col border border-dark">
+            <a class="heading" href="https://github.com/95Vaishnavi/Portfolio">Portfolio</a>
+            <!--<h4 >Alumni Tracking System</h4>-->
+            <h6>(Web Application)</h6>
+            <h5>Technology Stack Used :HTML, CSS</h5>
+            <p>A website that online representation of your skills, talents, and accomplishments.</p>
+          </div>
+
+          <div class="col border border-dark">
+            <a class="heading" href="https://github.com/95Vaishnavi/E-commerce_Dashboard">E-commerce Dashboard</a>
+            <!--<h4 >Alumni Tracking System</h4>-->
+            <h6>(Web Application)</h6>
+            <h5>Technology Stack Used : MERN</h5>
+            <p>A web application, that allows user to add product, update and delete product and create a product list.</p>
+          </div>
+          <div class="col border border-dark">
+            <a class="heading" href="https://github.com/95Vaishnavi/Weather_App">Weather App</a>
+            <!--<h4 >Alumni Tracking System</h4>-->
+            <h6>(Web Application)</h6>
+            <h5>Technology Stack Used :HTML,CSS,Js</h5>
+            <p>A web application, that gives the temperature, humidity and wind speed of Cities using weather API.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="container text-center">
+      <h1>Skills</h1>
+      <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+        <div class="col">
+          <div class="p-3 border bg-light ">C++</div>
+        </div>
+        <div class="col">
+          <div class="p-3 border bg-light">HTML</div>
+        </div>
+        <div class="col">
+          <div class="p-3 border bg-light">CSS</div>
+        </div>
+        <div class="col">
+          <div class="p-3 border bg-light">JavaScript</div>
+        </div>
+        <div class="col">
+          <div class="p-3 border bg-light">SQL</div>
+        </div>
+        <div class="col">
+          <div class="p-3 border bg-light">MongoDB</div>
+        </div>
+        <div class="col">
+          <div class="p-3 border bg-light">NodeJs</div>
+        </div>
+        <div class="col">
+          <div class="p-3 border bg-light">DBMS</div>
+        </div>
+        <div class="col">
+          <div class="p-3 border bg-light">Cloud Computing</div>
+        </div>
+        <div class="col">
+          <div class="p-3 border bg-light">Operating System</div>
+        </div>
+        <div class="col">
+          <div class="p-3 border bg-light">OOP</div>
+        </div>
+        <div class="col">
+          <div class="p-3 border bg-light">Data Structure</div>
+        </div>
+        <div class="col">
+          <div class="p-3 border bg-light">Python Basic</div>
+        </div>
+        <div class="col">
+          <div class="p-3 border bg-light">ML Basic</div>
+        </div>
+      </div>
+    </div>
+  </section>
+<section id="certifications">
+  <div class="content">
+    <h1>Certifications</h1>
+    <div class="about-content h-50">
+      <div id="carouselExampleCaptions" class="carousel slide w-80 ">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./images/Web_Development_Bootcamp_800x595.jpg" class="d-md-block w-75 h-50" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Web Develoment Bootstrap</h5>
+              <p>Learn about React, Nodejs and MongoDB.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./images/internship.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Software Engineering Virtual internship</h5>
+              <p>Virtual experience to do work within time boundry.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./images/SAIT.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Cloud Computing Workshop</h5>
+              <p>Detailed concepts about cloud computing.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+  <sub>
+    <section id="contacts">
+      <div class="contact  padding-bottom=23px">
+        <h1>Contacts</h1>
+        <address class="add text-center">
+          <p>Email Me: <a class="heading"  href="vaishnavidaware16@gmail.com">vaishnavidaware16@gmail.com</a></p>
+          <p>Linkedin: <a class="heading" href="http://www.linkedin.com/in/vaishnavi-daware-a43019210">Vaishnavi Daware</a></p>
+          <p>Github: <a class="heading" href="https://github.com/95Vaishnavi">Vaishnavi-Daware</a></p>
+
+        </address>
+
+
+      </div>
+    </section>
+  </sub>
+  <footer class="port">
+    <div class="copyright-notice">
+      <p>© <time datetime="2022">2023,</time> Vaishnavi Daware</p>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Web Developer', 'Full Stack Developer', 'Database Handler'],
+      typeSpeed: 50,
+    });
+  </script>
+</body>
+
+</html>
